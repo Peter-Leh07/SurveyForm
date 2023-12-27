@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Survey form</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!--Title and description-->
+       <article> <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p><article>
+      
+        <form action="C:\Users\lehoc\OneDrive\Počítač\programovanie\Forms\formRessults" method="post" id="survey form">
+        <!--name,email,age,role,recomendation,feature,interests-->
+        <label for="name" id="name-label">Name <br><input type="text" id="name" placeholder="Enter your name" required></label><br>
+        
+        <label for="email" id="email-label">Email <br><input type="email" id="email" placeholder="Enter your Email" required></label><br>
+        
+        <label for="age" id="number-label">Age(optional) <br> <input type="number" id="age" min="18" max="120" placeholder="Age"></label><br>
+        
+        <label for="dropdown">Which option best describes your current role?
+            <select name="" id="dropdown">
+                <option value="0">Select current role</option>
+                <option value="1">Student</option>
+                <option value="2">Full Time Job</option>
+                <option value="3">Full Time Learner</option>
+                <option value="4">Prefer not to say</option>
+                <option value="5">Other</option>
+            </select>
+        </label>
+
+        <legend>Would you recommend freeCodeCamp to a friend?</legend>
+        <label for="definitely"><input type="radio" id="definitely" name="recomendation" checked>Definitely</label><br>
+        <label for="maybe"><input type="radio" id="maybe" name="recomendation">Maybe</label><br>
+        <label for="not sure"><input type="radio" id="not sure" name="recomendation">Not Sure</label><br>
+
+        <label for="feature">What is your favorite feature of freeCodeCamp?
+            <select name="feature" id="feature">
+                <option value="0">Select an option</option>
+                <option value="1">Challenges</option>
+                <option value="2">Projects</option>
+                <option value="3">Community</option>
+                <option value="4">Open Source</option>
+            </select>
+        </label>
+
+        <!--interests: legend+labels-->
+        <legend>What would you like to see improved? (Check all that apply)</legend>
+        <label for="front-end"><input type="checkbox" id="front-end" name="improve">Front-end Projects</label><br>
+        <label for="back-end"><input type="checkbox" id="back-end" name="improve">Back-end Projects</label><br>
+        <label for="dataVisualisation"><input type="checkbox" id="dataVisualisation" name="improve">Data Visualisation</label><br>
+        <label for="challenges"><input type="checkbox" id="challenges" name="improve">Challenges</label><br>
+        <label for="openSource"><input type="checkbox" id="openSource" name="improve">Open Source Community</label><br>
+        <label for="forum"><input type="checkbox" id="forum" name="improve">Forum</label><br>
+        
+        <!--comments and suggestions-->
+        <label for="comments">Any comments or suggestions? <br><input type="textarea" id="comments" placeholder="Enter your comment here"></label><br>
+
+        <input type="submit" id="submit">
+
+      </form>
+    </body>
+</html>
